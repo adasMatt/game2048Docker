@@ -1,5 +1,5 @@
 # 2048 with Docker
-Games are easy and fun of learning any programming language or tools. 2048 game is one the most popular and easy to play game. This implementation of 2048 game can be cloned at https://github.com/chandradeoarya/2048 and after creating the Dockerfile in this repo run the commands in the next section to test deployment on localhost.
+Games are easy and fun of learning any programming language or tools. 2048 game is one the most popular and easy to play game. This implementation of 2048 game can be cloned at https://github.com/chandradeoarya/2048 and after creating the Dockerfile in this repo, run the commands in the next section to test deployment on localhost.
 
 <p align="center">
   <img src="https://github.com/chandradeoarya/2048/blob/master/2048.gif?raw=true" />
