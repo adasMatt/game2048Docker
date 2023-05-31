@@ -23,7 +23,7 @@ Games are easy and fun of learning any programming language or tools. 2048 game 
   - That should be everything you need to play Chandra's 2048 on localhost:8080. My highest score today was 12024 and I only had one 1024 tile, one 256, one 128, one 64, one 32, one 16, three 8, three 4, four 2 tiles. Dang.
 
 <p align="center">
-  <img src="https://github.com/adasMatt/game2048/blob/master/attemptScreenshot.png" />
+  <img src="https://github.com/adasMatt/game2048Docker/blob/master/attemptScreenshot.png" />
 </p>
 
 ## Customization
