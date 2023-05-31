@@ -8,8 +8,6 @@ FROM nginx:alpine
 COPY index.html /usr/share/nginx/html
 COPY js /usr/share/nginx/html/js
 COPY style /usr/share/nginx/html/style
-#COPY 2048.gif /usr/share/nginx/html
-#COPY favicon.ico /usr/share/nginx/html
 
 # Expose port 80 to the host
 EXPOSE 80
