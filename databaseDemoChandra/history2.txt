@@ -1,0 +1,43 @@
+At some point (probaly near the end of the historyFromEC2.txt), this contains commands from the 2nd console opened while a docker container was running nginx or something
+    1  docker
+    2  wget https://gist.github.com/chandradeoarya/fed734058bd0c91684a6ff01699b5b77/raw/cf96c3ec6b02c691716a75430d71cda9305f5086/install-docker-and-compose-ubuntu.sh
+    3  ls
+    4  chmod +x install-docker-and-compose-ubuntu.sh
+    5  ./install-docker-and-compose-ubuntu.sh 
+    6  docker network ls
+    7  docker
+    8  docker ps
+    9  history > history.txt
+   10  code history.txt 
+   11  pwd
+   12  echo 'new line' >> history.txt 
+   13  exit
+   14  docker ps
+   15  docker network inspect dockerMattNetwork > dockerInspect.txt
+   16  code dockerInspect.txt 
+   17  docker network inspect dockerMattNetwork 
+   18  docker ps
+   19  docker ps -a
+   20  docker start mattNetworkContainer1 ; docker ps
+   21  docker exec -it mattNetworkContainer2 sh
+   22* 
+   23  docker start mattNetworkContainer1 ; docker ps
+   24  docker exec -it mattNetworkContainer2 sh
+   25  docker ps
+   26  docker start mattNetworkContainer1 
+   27  history 
+   28  docker network inspect dockerMattNetwork > dockerInspect.txt
+   29  ls
+   30* 
+   31  docker network inspect dockerMattNetwork > dockerInspect.txt
+   32  docker exec -it mattNetworkContainer2 sh
+   33  history
+   34  cd twoge/
+   35  ls
+   36  code ../todolist-flask/todo.py 
+   37  docker ps -a
+   38  source venv/bin/activate
+   39  pip install -r requirements.txt
+   40  gunicorn app:app -c gunicorn_config.py
+   41  deactivate 
+   42  history > ../history3.txt; ls

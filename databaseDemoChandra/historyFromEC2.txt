@@ -1,0 +1,61 @@
+    1  docker
+    2  wget https://gist.github.com/chandradeoarya/fed734058bd0c91684a6ff01699b5b77/raw/cf96c3ec6b02c691716a75430d71cda9305f5086/install-docker-and-compose-ubuntu.sh
+    3  ls
+    4  chmod +x install-docker-and-compose-ubuntu.sh
+    5  ./install-docker-and-compose-ubuntu.sh 
+... just creating this file and doing other irrelevant things in these deleted lines
+   16  docker network ls
+   17  docker network inspect bridge | less
+   18  docker network inspect bridge > networkInspect.txt
+   19  code networkInspect.txt 
+   20  docker network create --driver bridge dockerMattNetwork; docker network ls
+   21  docker ps
+   22  docker volume create mattVolume; docker volume ls
+   23  docker run -v mattVolume:/home/test newContainerWithVolume /bin/sh
+   24  docker run -p 8888:80 nginx
+   25  code history.txt 
+   26  history > history.txt
+   27  docker run -d --name nginxhostnetwork --network host nginx
+   28  docker network ls
+   29  git clone https://github.com/chandradeoarya/todolist-flask
+   30  cd todolist-flask/
+   31  cd ..
+   32  git clone https://github.com/chandradeoarya/twoge
+   33  code twoge/app.py 
+   34  cd twoge/
+   35  docker run -d -p 5432:5432 --name postgres-container -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword -e POSTGRES_DB=twoge postgres:latest
+   36  docker ps
+   37  export SQLALCHEMY_DATABASE_URI=postgresql://myuser:mypassword@localhost:5432/twoge
+   38  python3 -m venv venv
+   39  source venv/bin/activate
+   40  pip install -r requirements.txt
+   41  sudo apt install python3-pip
+   42  python3 -m venv venv
+   43  sudo apt install python3.10-venv
+   44  python3 -m venv venv
+   45  source venv/bin/activate
+   46  pip install -r requirements.txt
+   47  gunicorn app:app -c gunicorn_config.py
+   48  history > ../history2.txt 
+   49  code ../history2.txt 
+   50  docker ps
+   51  docker stop postgres-container nginxhostnetwork 
+   52  docker ps
+   53  deactivate 
+   54  docker ps
+   55  cd ../todolist-flask/
+   56  docker ps -a
+   57  docker network ls
+   58  cd ../twoge/
+   59  source venv/bin/activate
+   60  gunicorn app:app -c gunicorn_config.py
+   61  cd ../todolist-flask/
+   62  docker network ls
+   63  docker ps -a
+   64  docker network inspect dockerMattNetwork 
+   65  deactivate 
+   66  docker run --network dockerMattNetwork --name mattNetworkContainer1 alpine
+   67  docker run --network dockerMattNetwork --name mattNetworkContainer2 nginx:alpine
+   68  history > ../history.txt 
+run this next
+docker run --network dockerMattNetwork --name mattNetworkContainer2 -p 80:80 nginx:alpine
