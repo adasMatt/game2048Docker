@@ -17,9 +17,11 @@ Games are easy and fun of learning any programming language or tools. 2048 game 
   ```
 
   - This next command will run the Docker container and map port 8080 the host machine to port 80 of the Docker container. 
+  -- the "-d" option allows the container to run in the background, so you can still use your terminal window.
+  -- the "--name" option allows you to name your container, to prevent Docker from choosing a random name.
 
   ```bash
-  docker run -p 8080:80 game2048
+  docker run -d --name game_c -p 8080:80 game2048
   ```
 
   - That should be everything you need to play Chandra's 2048 on localhost:8080. My highest score today was 12024 and I only had one 1024 tile, one 256, one 128, one 64, one 32, one 16, three 8, three 4, four 2 tiles. Dang.
@@ -31,5 +33,6 @@ Games are easy and fun of learning any programming language or tools. 2048 game 
 ## Customization
 
 You have to open `index.html` line no. 76 and 80 and give your name and your cohort name in the place of player's name.
-
+<!-- 
 You have to open `style/main.css` line no. 5  and change color `background: #000000;` to `background: #faf8ef;` as blue-green and multiple other types of deployment.
+-->
